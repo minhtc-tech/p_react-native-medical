@@ -1,5 +1,5 @@
-import { Text } from "react-native";
+import { Pressable, Text } from "react-native";
 
 export default function Page() {
-  return <Text>doctor direct page</Text>;
+  return <Pressable>doctor direct page</Pressable>;
 }

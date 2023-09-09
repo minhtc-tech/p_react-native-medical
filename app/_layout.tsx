@@ -1,23 +1,23 @@
+import { SplashScreen, Stack } from "expo-router";
+import { useEffect } from "react";
 import {
   useFonts,
-  Inter_400Regular,
-  Inter_700Bold,
-} from "@expo-google-fonts/inter";
-import { Slot, SplashScreen } from "expo-router";
-import { useEffect } from "react";
-import { Image, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { Ionicons } from "@expo/vector-icons";
-import clsx from "clsx";
+  Rubik_400Regular,
+  Rubik_500Medium,
+  Rubik_600SemiBold,
+} from "@expo-google-fonts/rubik";
 
 SplashScreen.preventAutoHideAsync();
 
-const HappyImg = require("../assets/images/emoji2.png");
+export const unstable_settings = {
+  initialRouteName: "index",
+};
 
 export default function HomeLayout() {
   const [fontsLoaded, fontError] = useFonts({
-    Inter_400Regular,
-    Inter_700Bold,
+    Rubik_400Regular,
+    Rubik_500Medium,
+    Rubik_600SemiBold,
   });
 
   useEffect(() => {
@@ -31,14 +31,10 @@ export default function HomeLayout() {
   }
 
   return (
-    <SafeAreaView>
-      <View className={clsx("bg-slate-600", "text-red-600", "p-8")}>
-        <Ionicons name="md-chevron-back" size={24} color="black" />
-
-        <Text className="bg-red-500 text-blue-500 text-center">Header</Text>
-        <Image source={HappyImg} style={{ width: 40, height: 40 }} />
-        <Slot />
-      </View>
-    </SafeAreaView>
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    />
   );
 }

@@ -1,0 +1,6 @@
+{
+  "Class Joiner": {
+    "prefix": "cj",
+    "body": ["className={clsx('$1')}"]
+  }
+}
