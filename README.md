@@ -1,4 +1,4 @@
-# Medical Demo App
+# Medical Demo App (Expo - React Native, NativeWind - TailwindCSS, TypeScript)
 
 ![Demo](demo/home.jpg)
 ![Demo](demo/appointment-video.jpg)
@@ -6,7 +6,7 @@
 ![Demo](demo/medication-detail.jpg)
 
 - Welcome to the simple medical App with Expo, TypeScript, TailwindCSS (NativeWind)!
-- This is a simple web application where you can find out a good structure when using Expo beside Tailwind.
+- This is a simple web application where you can find a good structure when using Expo beside Tailwind.
 - Video demo: https://youtu.be/ELUo8Xf7gIw?si=QtVsvd1c1u0ACm1f
 - Please give this source a star, thank you so much 🥰.
 
